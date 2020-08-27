@@ -45,9 +45,11 @@ var dayValue = 1;
 
 
 function beNone(element){
+  //ディスプレイをnoneにする
   element.style.display = "none";
 }
 function beBlock(element){
+  //ディスプレイをblockにする
   element.style.display = "block";
 }
 function firstFunction(){
@@ -97,6 +99,7 @@ function dayAnimeFunc(){
 }
 
 function nextDayFunc(){
+  //イベントや偏差値の表示の処理
   if(dayValue == 5){
     beNone(dayAnime);
     dayAnime.classList.remove("flash4");
@@ -194,12 +197,14 @@ function eventStart3(eventX){
 }
 
 function deviationFuncA(){
+  //偏差値の表示の実行。エンディング関連の関数も呼び出す
   blackBack.classList.add("black-flash");
   deviation.classList.add("black-flash");
   setTimeout("deviationFuncB()",4000);
 }
 
 function deviationFuncB(){
+  //偏差値を非表示
   blackBack.classList.remove("black-flash");
   deviation.classList.remove("black-flash");
   blackBack.style.display = "none";
@@ -212,12 +217,14 @@ function locationEndingA(){
 }
 
 function locationEndingB(){
+  //エンディングに飛ばす
   if(dayValue == 20){
         window.location.href　=　"./my-summer-ending.html";
       }
 }
 
 function clickA(){
+  //イベントごとに動作を止めたり、日数関連の処理、日数が変わるときのアニメーションの一部実行
   console.log(dayValue);
   console.log(eventChecked);
   if(dayValue == 6 && eventChecked == 0){
@@ -242,6 +249,7 @@ function clickA(){
 }
 
 function clickB(){
+  //イベントごとに動作を止めたり、日数関連の処理、日数が変わるときのアニメーションの一部実行
   console.log(dayValue);
   console.log(eventChecked);
   if(dayValue == 6 && eventChecked == 0){
@@ -271,6 +279,8 @@ function clickB(){
 monologue();
 
 
+
+//onlickのなかにonclickを入れることで動作の判定の正確性が担保される。例えばチュートリアルを終わらせないとチュートリアルと関係ないボタンを押しても反応しないなど
 tutorialButton.onclick = () => {
   //チュートリアルonclick1回目。チュートリアルのメッセージを切り替える
   beNone(tutorialA);
@@ -288,6 +298,7 @@ tutorialButton.onclick = () => {
   //チュートリアルonclick3回目。チュートリアルを削除し、タイトルを変える
   document.title = "ぼくのながいなつやすみ";
   tutorialArea.remove();
+  //下の関数で「寝る」と「ゲーム」以外の行動を選べなくなる
   buttonA.onclick = () => {
     console.log(dayValue);
     console.log(eventChecked);
@@ -342,4 +353,3 @@ tutorialButton.onclick = () => {
       return;
     }else{
     alert("しかし体力が足りない");}}}}}
-
