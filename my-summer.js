@@ -220,10 +220,7 @@ function clickA(){
   }else if(dayValue == 18 && eventChecked == 2){
     return;
   }
-    dayValue++;
-    if(dayValue === 21){
-      window.location.href　=　"./my-summer-ending.html";
-    }
+    
     console.log(dayValue);
     setTimeout("dayAnimeFunc()",4000);
     beBlock(blackBack);
