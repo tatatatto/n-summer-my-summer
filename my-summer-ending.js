@@ -6,7 +6,6 @@ const ending3 = document.getElementById("ending-3");
 const ending4 = document.getElementById("ending-4");
 const black = document.getElementById("black");
 const p = document.getElementById("p");
-const link = document.getElementById("link");
 const p2 = document.getElementById("p2");
 const rollP =document.getElementById("roll-p");
 const monologue = document.getElementById("monologue");
@@ -101,7 +100,5 @@ function endingI(){
 
 function endingJ(){
   p2.remove();
-  link.innerText = "続編　ぼくのさむいなつやすみ";
 }
-
 
