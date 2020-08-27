@@ -245,7 +245,7 @@ function clickB(){
   }
   dayValue++;
   if(dayValue >= 21){
-    window.location.href　=　"file:///Users/katotakuto/workspace/my-summer/my-summer-ending.html";
+    window.location.href　=　"./my-summer-ending.html";
   }
   var deviation = dayValue % 5;
   if(deviation == 0){
