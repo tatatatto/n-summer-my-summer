@@ -11,6 +11,8 @@ const rollP =document.getElementById("roll-p");
 const monologue = document.getElementById("monologue");
 
 
+//秒数を指定してclassやdisplayを変更してアニメーションを切り替える
+
 black.classList.add("flashflash");
 setTimeout("pFunc()",1000);
 setTimeout("blackA()",6000);
