@@ -119,7 +119,7 @@ function nextDayFunc(){
     dayAnime.classList.remove("flash4");
     deviation.style.display = "block";
     deviation.innerText = "英:36.国:46.数:45";
-    setTimeout("deviationFuncA()",1000);
+    setTimeout("locationEndingA();",1500);
   }else{
   beNone(blackBack);
   beNone(dayAnime);
@@ -204,10 +204,18 @@ function deviationFuncB(){
   deviation.classList.remove("black-flash");
   blackBack.style.display = "none";
   deviation.style.display = "none";
-  if(dayValue >= 20){
-    window.location.href　=　"./my-summer-ending.html";
-  }}
+}
 
+function locationEndingA(){
+  deviation.classList.add("black-flash");
+  setTimeout("locationEndingB()",3800);
+}
+
+function locationEndingB(){
+  if(dayValue == 20){
+        window.location.href　=　"./my-summer-ending.html";
+      }
+}
 
 function clickA(){
   console.log(dayValue);
@@ -219,8 +227,10 @@ function clickA(){
     return;
   }else if(dayValue == 18 && eventChecked == 2){
     return;
+  }else if(dayValue == 20 && eventChecked == 3){
+    return;
   }
-    
+    dayValue++;
     console.log(dayValue);
     setTimeout("dayAnimeFunc()",4000);
     beBlock(blackBack);
@@ -240,6 +250,8 @@ function clickB(){
   }else if(dayValue == 12 && eventChecked == 1){
     return;
   }else if(dayValue == 18 && eventChecked == 2){
+    return;
+  }else if(dayValue == 20 && eventChecked == 3){
     return;
   }
   dayValue++;
@@ -330,10 +342,4 @@ tutorialButton.onclick = () => {
       return;
     }else{
     alert("しかし体力が足りない");}}}}}
-
-
-
-
-
-
 
