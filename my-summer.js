@@ -204,7 +204,9 @@ function deviationFuncB(){
   deviation.classList.remove("black-flash");
   blackBack.style.display = "none";
   deviation.style.display = "none";
-}
+  if(dayValue >= 20){
+    window.location.href　=　"./my-summer-ending.html";
+  }}
 
 
 function clickA(){
@@ -244,13 +246,6 @@ function clickB(){
     return;
   }
   dayValue++;
-  if(dayValue >= 21){
-    window.location.href　=　"./my-summer-ending.html";
-  }
-  var deviation = dayValue % 5;
-  if(deviation == 0){
-    //偏差値を入れる
-  }
   console.log(dayValue);
   setTimeout("dayAnimeFunc()",4000);
   beBlock(blackBack);
