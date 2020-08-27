@@ -1,0 +1,135 @@
+body{
+  display: flex;
+  margin: 0 auto;
+}
+
+.monologueB{
+  animation: monologue-flash 3.8s;
+}
+
+.monologue{
+  display: none;
+  width:80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vw;
+  height: 20vw;
+  text-align: center;
+  font-size: 60px;
+}
+
+.flash{
+  animation: flashing-A 3s;
+}
+
+.flashB{
+  animation: flashing-B 6s;
+}
+
+.opening img{
+  position: absolute;
+  width: 100vw;
+}
+
+.opening1-A{
+  width: 100vw;
+  object-fit: contain;
+  position: absolute;
+  z-index: 8; 
+}
+
+.opening1-B{
+  position: absolute;
+  object-fit: contain;
+  width: 30vw;
+  margin-left: 35vw;
+  margin-top: 15vw;
+  z-index: 9; 
+}
+
+.first-anime{
+  animation: roll 6s;
+}
+
+.monologue{
+  z-index: 7;
+  position: absolute;
+}
+
+.opening2{
+  z-index: 6;
+  display: none;
+  width: 100vw;
+}
+
+.opening3{
+  z-index: 5;
+  margin-top:8vw;
+  display: none;
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.opening4{
+  margin-top:10vw;
+  z-index: 4;
+  display: none;
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.opening5{
+  margin-top: 8vw;
+  z-index: 3;
+  display: none;
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.link{
+  z-index: 2;
+  position: absolute;
+  margin:0 auto;
+  display: none;
+  font-size: 30px;
+  width: 14vw;
+  height: 4vw;
+  left: 43%;
+  right: 43%;
+  top: 75%;
+}
+
+.opening6{
+  z-index: 1;
+  display: none;
+  width: 100vw;
+}
+
+@keyframes roll {
+  0% { opacity: 0; transform:rotate(0deg); margin-top:5vw; margin-left: 5vw; object-fit: contain; width:90vw;}
+ 20% { opacity: 1;}
+100% { transform:rotate(-30deg); margin-top:10vw; margin-left: 27.5vw; object-fit: contain; width:45vw;}
+}
+
+@keyframes flashing-A {
+  0% {opacity: 0;}
+ 50% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@keyframes flashing-B {
+  0% {opacity: 0;}
+ 25% {opacity: 1;}
+ 75% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@keyframes monologue-flash{
+  0% {opacity: 0;}
+ 40% {opacity: 1;}
+ 80% {opacity: 1;}
+100% {opacity: 0;}
+}

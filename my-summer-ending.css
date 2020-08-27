@@ -1,0 +1,131 @@
+img{
+  position: absolute;
+}
+
+body{
+  margin: 0 auto 0 auto;
+}
+
+p{
+  position: absolute;
+  z-index: 3;
+}
+
+.roll{
+  display: none;
+}
+
+.roll-p{
+  margin-left: 32vw;
+  color:white;
+  font-size: 20px;
+  width: 60vw;
+  animation: stuffed-roll 15s linear forwards;
+}
+
+.monologue{
+  color: white;
+  width: 100vw;
+  text-align:center;
+  margin-top: 15vw;
+  font-size: 200px;
+}
+
+.p2{
+  color: white;
+  font-size: 50px;
+  text-align:center;
+  width: 100vw;
+  display: none;
+  margin: 0 auto;
+  margin-top: 17vw;
+}
+
+.p{
+  font-size: 50px;
+  text-align:center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+a{
+  position: absolute;
+  z-index: 3;
+}
+
+.black{
+  z-index: 2;
+  width: 100vw;
+}
+
+.ending-1{
+  z-index: 1;
+  margin-left: 12vw;
+  height: 50vw;
+  object-fit: contain;
+}
+
+.ending-2{
+  z-index: 1;
+  margin-left: 23vw;
+  display: none;
+}
+
+.ending-3{
+  z-index: 1;
+  margin-top: 15vw;
+  margin-left: 22vw;
+  display: none;
+}
+
+.ending-4{
+  z-index: 1;
+  width: 40vw;
+  object-fit: contain;
+  margin-left: 29vw;
+  display: none;
+}
+
+.flashA{
+  animation: flashA 3s;
+}
+
+.flashflash{
+  animation: flashA 6s;
+}
+
+.flashB{
+  animation: flashB 6s;
+}
+
+.flashC{
+  animation: flashC 2s;
+}
+
+.flashC5{
+  animation: flashC 5s;
+}
+
+@keyframes flashA{
+  0% {opacity: 1;}
+ 30% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@keyframes flashB{
+  0% {opacity: 0;}
+ 40% {opacity: 1;}
+ 80% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@keyframes flashC{
+  0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+
+@keyframes stuffed-roll{
+  0%{ top: 100%;}
+100%{top: -200%; }
+}
