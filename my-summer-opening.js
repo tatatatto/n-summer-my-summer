@@ -10,6 +10,8 @@ const opening6 = document.getElementById("opening6");
 const monologue = document.getElementById("monologue");
 const link = document.getElementById("link");
 
+//基本的にアニメーションと分を切り替えるのみ。ボタンを押すと別のページに飛ばし、本編がはじまる
+
 opening1B.classList.add("first-anime");
 setTimeout("firstRemoveAndFlash()",6000);
 
