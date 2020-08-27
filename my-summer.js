@@ -220,7 +220,7 @@ function clickA(){
   }
     dayValue++;
     if(dayValue === 21){
-      window.location.href　=　"file:///Users/katotakuto/workspace/my-summer/my-summer-ending.html";
+      window.location.href　=　"./my-summer-ending.html";
     }
     console.log(dayValue);
     setTimeout("dayAnimeFunc()",4000);
