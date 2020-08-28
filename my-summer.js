@@ -1,13 +1,7 @@
 'usestrict'
 
 const roomA = document.getElementById("room");
-const roomB = document.getElementById("room");
-const roomC = document.getElementById("room");
-const roomD = document.getElementById("room");
-const roomE = document.getElementById("room");
 const humanA = document.getElementById("human");
-const humanB = document.getElementById("human");
-const humanC = document.getElementById("human");
 const buttonA = document.getElementById("buttonA");
 const buttonB = document.getElementById("buttonB");
 const buttonC = document.getElementById("buttonC");
@@ -218,6 +212,7 @@ function locationEndingA(){
 
 function locationEndingB(){
   //エンディングに飛ばす
+  deviation.remove();
   if(dayValue == 20){
         window.location.href　=　"./my-summer-ending.html";
       }
