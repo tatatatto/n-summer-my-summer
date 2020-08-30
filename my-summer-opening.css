@@ -3,6 +3,25 @@ body{
   margin: 0 auto;
 }
 
+.kagawa-button{
+  display: flex;
+  flex-direction:column;
+}
+
+.k-button{
+  margin-top:1.5vw;
+  margin-left: 1.5vw;
+  width:20vw;
+}
+
+.kagawa-ng{
+  display: none;
+}
+
+.kagawa-question{
+  margin-left: 1.5vw;
+}
+
 .monologueB{
   animation: monologue-flash 3.8s;
 }
@@ -32,6 +51,7 @@ body{
 }
 
 .opening1-A{
+  display: none;
   width: 100vw;
   object-fit: contain;
   position: absolute;
@@ -39,6 +59,7 @@ body{
 }
 
 .opening1-B{
+  display: none;
   position: absolute;
   object-fit: contain;
   width: 30vw;
