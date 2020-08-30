@@ -9,11 +9,63 @@ const opening5 = document.getElementById("opening5");
 const opening6 = document.getElementById("opening6");
 const monologue = document.getElementById("monologue");
 const link = document.getElementById("link");
+const buttonA = document.getElementById("buttonA");
+const buttonB = document.getElementById("buttonB");
+const buttonC = document.getElementById("buttonC");
+const buttonD = document.getElementById("buttonD");
+const buttonE = document.getElementById("buttonE");
+const buttonF = document.getElementById("buttonF");
+const kagawaQusetion = document.getElementById("kagawa-question");
+const kagawaNg = document.getElementById("kagawa-ng");
 
-//基本的にアニメーションと分を切り替えるのみ。ボタンを押すと別のページに飛ばし、本編がはじまる
+//香川県民の場合はプレイできない
+//基本的にアニメーションと分を切り替えるのみ。リンクをクリックすると別のファイルに飛ばし、本編がはじまる
 
+buttonA.onclick = () => {
+  //香川県民である場合
+  kagawaQusetion.remove();
+  kagawaNg.style.display = "block";
+}
+
+buttonB.onclick = () => {
+  //香川県民でない場合
+kagawaQusetion.remove();
+opening1A.style.display = "block";
+opening1B.style.display = "block";
 opening1B.classList.add("first-anime");
-setTimeout("firstRemoveAndFlash()",6000);
+setTimeout("firstRemoveAndFlash()",6000);}
+
+buttonC.onclick = () => {
+  //香川県民
+  document.location.href = "https://www.google.com";
+}
+
+buttonD.onclick = () => {
+  //香川県民でない場合
+kagawaQusetion.remove();
+kagawaNg.remove();
+opening1A.style.display = "block";
+opening1B.style.display = "block";
+opening1B.classList.add("first-anime");
+setTimeout("firstRemoveAndFlash()",6000);}
+
+buttonE.onclick = () => {
+  //香川県民でない場合
+kagawaQusetion.remove();
+kagawaNg.remove();
+opening1A.style.display = "block";
+opening1B.style.display = "block";
+opening1B.classList.add("first-anime");
+setTimeout("firstRemoveAndFlash()",6000);}
+
+buttonF.onclick = () => {
+  //香川県民でない場合
+kagawaQusetion.remove();
+kagawaNg.remove();
+opening1A.style.display = "block";
+opening1B.style.display = "block";
+opening1B.classList.add("first-anime");
+setTimeout("firstRemoveAndFlash()",6000);}
 
 function firstRemoveAndFlash(){
 opening1A.remove();
