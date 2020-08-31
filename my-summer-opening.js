@@ -33,7 +33,7 @@ kagawaQusetion.remove();
 opening1A.style.display = "block";
 opening1B.style.display = "block";
 opening1B.classList.add("first-anime");
-setTimeout("firstRemoveAndFlash()",6000);}
+setTimeout("firstRemoveAndFlash()",5900);}
 
 buttonC.onclick = () => {
   //香川県民
@@ -47,7 +47,7 @@ kagawaNg.remove();
 opening1A.style.display = "block";
 opening1B.style.display = "block";
 opening1B.classList.add("first-anime");
-setTimeout("firstRemoveAndFlash()",6000);}
+setTimeout("firstRemoveAndFlash()",5900);}
 
 buttonE.onclick = () => {
   //香川県民でない場合
@@ -56,7 +56,7 @@ kagawaNg.remove();
 opening1A.style.display = "block";
 opening1B.style.display = "block";
 opening1B.classList.add("first-anime");
-setTimeout("firstRemoveAndFlash()",6000);}
+setTimeout("firstRemoveAndFlash()",5900);}
 
 buttonF.onclick = () => {
   //香川県民でない場合
@@ -65,7 +65,7 @@ kagawaNg.remove();
 opening1A.style.display = "block";
 opening1B.style.display = "block";
 opening1B.classList.add("first-anime");
-setTimeout("firstRemoveAndFlash()",6000);}
+setTimeout("firstRemoveAndFlash()",5900);}
 
 function firstRemoveAndFlash(){
 opening1A.remove();
@@ -73,7 +73,7 @@ opening1B.remove();
 opening2.style.display = "block";
 opening2.classList.add("flashB");
 setTimeout("monologueFlash()",1500);
-setTimeout("secondRemoveAndFlash()",6000);
+setTimeout("secondRemoveAndFlash()",5900);
 }
 
 function monologueFlash(){
